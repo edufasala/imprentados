@@ -12,6 +12,15 @@ use Illuminate\View\View;
 class ProfileController extends Controller
 {
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('perfil.index');
+    }
+    /**
      * Display the user's profile form.
      */
     public function edit(Request $request): View

@@ -12,6 +12,7 @@ use App\Http\Controllers\FacturasController;
 use App\Http\Controllers\ImpresionController;
 use App\Http\Controllers\PreciosController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RolesController;
 use App\Http\Controllers\TesoreriaController;
 use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
@@ -35,9 +36,10 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/perfil', [ProfileController::class, 'index'])->name('profile.index');
+    // Route::get('/perfil', [ProfileController::class, 'edit'])->name('profile.edit');
+    // Route::patch('/perfil', [ProfileController::class, 'update'])->name('profile.update');
+    // Route::delete('/perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     #Usuarios
     Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');
@@ -48,6 +50,7 @@ Route::middleware('auth')->group(function () {
 
     #Clientes
     Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
+    Route::get('/clientes/ver-detalles', [ClientesController::class, 'show'])->name('clientes.show');
 
 
     #Central File
@@ -84,6 +87,9 @@ Route::middleware('auth')->group(function () {
 
     #Configuraciones
     Route::get('/configuraciones', [ConfiguracionesController::class, 'index'])->name('configuraciones.index');
+
+    #Configuraciones - Roles
+    Route::get('/configuraciones/roles/editar-rol', [RolesController::class, 'edit'])->name('configuraciones.roles.edit');
 });
 
 require __DIR__.'/auth.php';

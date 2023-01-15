@@ -13,7 +13,7 @@ class ImpresionController extends Controller
      */
     public function index()
     {
-        return view('construccion');
+        return view('impresion.index');
     }
 
     /**

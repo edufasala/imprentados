@@ -21,9 +21,9 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mt-5">
-                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y ">
                         <div class="report-box zoom-in">
-                            <div class="box p-5">
+                            <div class=" box p-5">
                                 <div class="flex">
                                     <i data-lucide="shopping-cart" class="report-box__icon text-primary"></i>
                                     <div class="ml-auto">
@@ -97,7 +97,7 @@
                         <input type="text" class="datepicker form-control sm:w-56 box pl-10">
                     </div>
                 </div>
-                <div class="intro-y box p-5 mt-12 sm:mt-5">
+                <div class="intro-y box p-5 mt-12 sm:mt-5 ">
                     <div class="flex flex-col md:flex-row md:items-center">
                         <div class="flex">
                             <div>

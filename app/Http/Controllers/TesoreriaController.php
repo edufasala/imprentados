@@ -13,7 +13,7 @@ class TesoreriaController extends Controller
      */
     public function index()
     {
-        return view('construccion');
+        return view('tesoreria.index');
     }
 
     /**

@@ -13,7 +13,7 @@ class EntregasController extends Controller
      */
     public function index()
     {
-        return view('construccion');
+        return view('entregas.index');
     }
 
     /**

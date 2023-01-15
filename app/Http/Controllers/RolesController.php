@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FacturasController extends Controller
+class RolesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class FacturasController extends Controller
      */
     public function index()
     {
-        return view('facturacion.index');
+        //
     }
 
     /**
@@ -34,7 +34,7 @@ class FacturasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -54,9 +54,9 @@ class FacturasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view('roles.edit');
     }
 
     /**

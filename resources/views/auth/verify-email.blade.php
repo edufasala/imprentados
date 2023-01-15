@@ -42,7 +42,7 @@
                     <a href="" class="-intro-x flex items-center pt-5 pb-10">
                         <img alt="Admin Imprenta" width="350" src="{{ asset('build/assets/images/logo.png') }}">
                     </a>
-                    <p class="intro-x font-normal text-1xl xl:text-1xl text-center  xl:text-left">
+                    <p class="intro-x font-normal text-1xl xl:text-1xl text-center  xl:text-left mb-5">
                         Gracias por registrarte! Antes de comenzar,<br>
                         ¿podría verificar su dirección de correo electrónico haciendo
                         click en el enlace que le acabamos de enviar?<br>

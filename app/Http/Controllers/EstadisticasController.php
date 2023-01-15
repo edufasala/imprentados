@@ -13,7 +13,7 @@ class EstadisticasController extends Controller
      */
     public function index()
     {
-        return view('construccion');
+        return view('estadisticas.index');
     }
 
     /**
